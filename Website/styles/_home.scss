@@ -3,6 +3,21 @@
 
 #home-page {
     text-align: center;
+
+	h2
+	{
+		margin-bottom: 2rem;
+	}
+
+	#logo
+	{
+		margin: 2rem 0 2.5rem;
+
+		img
+		{
+			max-width: 26rem;
+		}
+	}
 }
 
 @media (max-width: 430px) {
