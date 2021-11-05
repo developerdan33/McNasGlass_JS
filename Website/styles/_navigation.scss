@@ -3,7 +3,7 @@
 
 header {
     text-align: center;
-    background-color: white;
+    background-color: $colour-primary;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	width: 100%;
     z-index: 3;
@@ -13,11 +13,12 @@ header {
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-        background-color: white;
+        background-color: $colour-primary;
 
         li {
 
             a {
+				color: white;
                 display: block;
                 font-size: 1.3rem;
                 padding: 15px 20px;
@@ -27,8 +28,8 @@ header {
             }
 
             a:hover {
-                color: white;
-                background-color: $colour-primary;
+                color: $colour-primary;
+                background-color: white;
             }
         }
     }
@@ -42,10 +43,10 @@ header {
     .menu-logo {
         display: block;
         float: left;
-        padding: 6px 25px;
+        padding: 8px 25px;
 
         img {
-            width: 135px;
+            width: 2.5rem;
         }
     }
 
@@ -57,7 +58,7 @@ header {
         user-select: none;
         
         .navicon {
-            background: black;
+            background: white;
 			display: block;
 			height: 2px;
 			position: relative;
@@ -67,7 +68,7 @@ header {
 
         .navicon:before,
         .navicon:after {
-            background: black;
+            background: white;
             content: '';
             display: block;
             height: 100%;
