@@ -1,0 +1,184 @@
+/* Header */
+/*----------------------------------------------------------------------------------------------------*/
+
+header {
+    text-align: center;
+    background-color: white;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	width: 100%;
+    z-index: 3;
+    
+    ul {
+        margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+        background-color: white;
+
+        li {
+
+            a {
+                display: block;
+                font-size: 1.3rem;
+                padding: 15px 20px;
+                //border-right: 1px solid $colour-light;
+                text-decoration: none;
+                transition: all .15s ease-in-out;
+            }
+
+            a:hover {
+                color: white;
+                background-color: $colour-primary;
+            }
+        }
+    }
+
+    .menu {
+        clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+    }
+
+    .menu-logo {
+        display: block;
+        float: left;
+        padding: 6px 25px;
+
+        img {
+            width: 135px;
+        }
+    }
+
+    .menu-icon {
+        cursor: pointer;
+		float: right;
+		padding: 28px 20px;
+		position: relative;
+        user-select: none;
+        
+        .navicon {
+            background: black;
+			display: block;
+			height: 2px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 21px;
+        }
+
+        .navicon:before,
+        .navicon:after {
+            background: black;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        .navicon:before {
+            top: 7px;
+        }
+
+        .navicon:after {
+            top: -7px;
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    .menu-btn:hover {
+        background-color: $colour-light;
+    }
+}
+
+
+@media (min-width: 768px) {
+    header {
+        .menu-logo {
+            display: none;
+        }
+
+        li {
+            float: left;
+            min-width: 95px;
+        }
+
+        a {
+            padding: 20px 30px;
+        }
+
+        .menu {
+            display: inline-flex;
+            clear: none;
+            max-height: none;
+            margin: 0 auto;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+    }
+}
+
+
+/* Footer */
+/*----------------------------------------------------------------------------------------------------*/
+
+footer {
+    text-align: center;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    width: 100%;
+    z-index: 3;
+    font-size: 1.6rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+        width:150px;
+        margin: 0 auto;
+
+        li {
+            float: left;
+            width: 50px;
+
+            a {
+                display: block;
+                padding: 15px 13px;
+                text-decoration: none;
+                transition: all .15s ease-in-out;
+            }
+
+            a:hover {
+                color: white;
+                background-color: $colour-primary;
+            }
+        }
+    }
+}
