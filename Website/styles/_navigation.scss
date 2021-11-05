@@ -151,6 +151,7 @@ header {
 
 footer {
     text-align: center;
+	background-color: $colour-primary;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     width: 100%;
     z-index: 3;
@@ -161,7 +162,6 @@ footer {
         padding: 0;
         list-style: none;
         overflow: hidden;
-        background-color: #fff;
         width:150px;
         margin: 0 auto;
 
@@ -170,6 +170,7 @@ footer {
             width: 50px;
 
             a {
+				color: white;
                 display: block;
                 padding: 15px 13px;
                 text-decoration: none;
@@ -177,8 +178,8 @@ footer {
             }
 
             a:hover {
-                color: white;
-                background-color: $colour-primary;
+                color: $colour-primary;
+                background-color: white;
             }
         }
     }
