@@ -1,15 +1,15 @@
 /* Imports */
 /*----------------------------------------------------------------------------------------------------*/
 
-@import "variables";
-@import "fonts";
+@import "inc/variables";
+@import "inc/fonts";
 
 // Layout
-@import "layout";
-@import "navigation";
+@import "inc/layout";
+@import "inc/navigation";
 
 // Pages
-@import "home";
-@import "about";
-@import "services";
-@import "contact";
+@import "inc/home";
+@import "inc/about";
+@import "inc/services";
+@import "inc/contact";
