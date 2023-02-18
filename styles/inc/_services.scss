@@ -1,17 +1,22 @@
 /* Services */
 /*----------------------------------------------------------------------------------------------------*/
-#services {
-    margin: 25px;
-    text-align: center;
 
-    .btn {
-        margin: 40px auto 0;
-        min-width: 260px;
-    }
+#services
+{
+	margin: 25px;
+	text-align: center;
+
+	.btn
+	{
+		margin: 40px auto 0;
+		min-width: 260px;
+	}
 }
 
-@media (max-width: 400px) {
-    #services {
-        margin: 15px;
-    }
+@media (max-width: 400px)
+{
+	#services
+	{
+		margin: 15px;
+	}
 }
