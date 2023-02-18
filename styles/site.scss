@@ -1,9 +1,13 @@
 /* Imports */
 /*----------------------------------------------------------------------------------------------------*/
 
+// Bootstrap
 @import "inc/variables";
 @import "./bootstrap/bootstrap";
+
+// Base
 @import "inc/fonts";
+@import "inc/type";
 
 // Layout
 @import "inc/layout";
