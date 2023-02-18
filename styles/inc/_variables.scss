@@ -1,7 +1,3 @@
-/* Variables */
-/*----------------------------------------------------------------------------------------------------*/
-
-
 /* Colours */
 /*----------------------------------------------------------------------------------------------------*/
 
@@ -20,6 +16,26 @@ $colour-border: $colour-medium;
 $link-color: $colour-primary;
 $link-hover-color: white;
 
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: $colour-light;
+$dark: black;
+
+/* Bootstrap */
+/*----------------------------------------------------------------------------------------------------*/
+
+$theme-colors: (
+  "primary":    $colour-primary,
+  "secondary":  $colour-secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
 
 /* Type */
 /*----------------------------------------------------------------------------------------------------*/
