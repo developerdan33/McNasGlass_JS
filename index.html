@@ -12,21 +12,36 @@
         <link href="./styles/site.min.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="/" class="menu-logo">
-                <img src="./images/logo_small.png" alt="McNa's Glass">
-            </a>
+		<div class="container-fluid g-0">
+			<nav class="navbar navbar-expand-lg bg-primary">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="./images/logo_small.png" class="d-block d-lg-none" alt="McNa's Glass">
+						<img src="./images/logo_header.svg" class="d-none d-lg-block" alt="McNa's Glass">
+					</a>
 
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </header>
+					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#services">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
 
         <div id="content"></div>
         
