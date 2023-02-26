@@ -33,6 +33,39 @@
 			}
 		}
 	}
+
+	#home-about
+	{
+		margin-top: 3rem;
+		padding: 0 2rem;
+
+		h1
+		{
+			margin-bottom: 0;
+		}
+
+		#cards
+		{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2rem;
+
+			.card
+			{
+				i
+				{
+					font-size: 3rem;
+					margin: 1rem 0;
+				}
+
+				.card-text
+				{
+					padding: 0 2rem;
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 430px)
@@ -51,6 +84,21 @@
 	}
 }
 
-@media (max-width: 768px)
+@media (min-width: 768px)
 {
+	#home-page
+	{
+		#home-about
+		{
+			#cards
+			{
+				flex-direction: row;
+
+				.card
+				{
+					height: 100%;
+				}
+			}
+		}
+	}
 }
