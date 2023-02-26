@@ -5,18 +5,32 @@
 {
 	text-align: center;
 
-	h2
+	#banner
 	{
-		margin-bottom: 2rem;
-	}
-
-	#logo
-	{
-		margin: 2rem 0 2.5rem;
-
-		img
+		.carousel-item
 		{
-			max-width: 26rem;
+			.text
+			{
+				position: absolute;
+				top: 20%;
+				left: 45%;
+				right: 0rem;
+				background-color: rgba(0,0,0,.6);
+				width: 40rem;
+				color: white !important;
+				padding: 2rem;
+
+				h2
+				{
+					margin: 0;
+					padding: 1rem 0;
+				}
+
+				.btn
+				{
+					color: white !important;
+				}
+			}
 		}
 	}
 }
@@ -39,13 +53,4 @@
 
 @media (max-width: 768px)
 {
-	#home-page
-	{
-		padding: 0 15px; 
-		
-		img
-		{
-			max-width: 80%;
-		}
-	}
 }
