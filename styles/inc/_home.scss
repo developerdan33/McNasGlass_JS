@@ -81,6 +81,11 @@
 		max-width: $max-width;
 		margin: 3rem auto;
 
+		#reviews-carousel
+		{
+			min-height: 22rem;
+		}
+
 		.carousel-inner
 		{
 			padding: 0 5rem;
@@ -138,6 +143,11 @@
 
 		#home-reviews
 		{
+			#reviews-carousel
+			{
+				min-height: 11rem;
+			}
+			
 			.carousel-inner
 			{
 				padding: 0 10rem;
