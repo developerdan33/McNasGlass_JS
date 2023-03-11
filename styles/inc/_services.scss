@@ -3,20 +3,47 @@
 
 #services
 {
-	margin: 25px;
-	text-align: center;
-
-	.btn
+	.w-100
 	{
-		margin: 40px auto 0;
-		min-width: 260px;
+		display:  none;
 	}
 }
 
-@media (max-width: 400px)
+.service
+{
+	margin-bottom: 1rem;
+
+	img
+	{
+		width: 100%;
+		height: auto;
+		margin-bottom: 1rem;
+	}
+
+	.title
+	{
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.service
+	{
+		.title
+		{
+			font-size: 0.8rem;
+		}
+	}
+}
+
+@media (min-width: 992px)
 {
 	#services
 	{
-		margin: 15px;
+		.w-100
+		{
+			display:  block;
+		}
 	}
 }
