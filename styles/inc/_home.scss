@@ -74,6 +74,33 @@
 		max-width: $max-width;
 		margin: 3rem auto 0;
 	}
+
+	#home-reviews
+	{
+		padding: 0 2rem;
+		max-width: $max-width;
+		margin: 3rem auto;
+
+		.carousel-inner
+		{
+			padding: 0 10rem;
+
+			.title
+			{
+				margin-bottom: 1rem;
+			}
+
+			.stars
+			{
+				margin-bottom: 1rem;
+			}
+
+			.name
+			{
+				font-weight: 600;
+			}
+		}
+	}
 }
 
 @media (max-width: 430px)
