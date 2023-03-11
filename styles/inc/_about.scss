@@ -3,16 +3,14 @@
 
 #about
 {
-	margin: 50px;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	img
 	{
-		float: left;
-		max-width: 40%;
-		margin-right: 50px;
+		max-width: 16rem;
+		margin-bottom: 2rem;
 	}
 
 	#info
@@ -20,22 +18,32 @@
 		display: flex;
 		flex-direction: column;
 		text-align: left;
-	}
 
-	.btn
-	{
-		margin: 40px auto 0;
-		min-width: 260px;
+		h3
+		{
+			text-align: center;
+		}
 	}
 }
 
-@media (max-width: 900px)
+@media (min-width: 576px)
 {
 	#about
 	{
-		.btn
+		flex-direction: row;
+		align-items: start;
+
+		img
 		{
-			margin: 15px auto;
+			margin-right: 2rem;
+		}
+
+		#info
+		{
+			h3
+			{
+				text-align: left;
+			}
 		}
 	}
 }
@@ -44,11 +52,9 @@
 {
 	#about
 	{
-		margin: 25px;
-
 		img
 		{
-			margin-right: 25px;
+			
 		}
 	}
 }
@@ -57,13 +63,9 @@
 {
 	#about
 	{
-		margin: 20px;
-		
 		img
 		{
-			float: none;
-			margin-right: 0;
-			margin-bottom: 25px;
+			
 		}
 	}
 }

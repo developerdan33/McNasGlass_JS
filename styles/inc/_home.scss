@@ -3,8 +3,6 @@
 
 #home-page
 {
-	text-align: center;
-
 	#banner
 	{
 		.carousel-item
@@ -90,13 +88,6 @@
 				font-weight: 600;
 			}
 		}
-	}
-
-	.panel
-	{
-		padding: 0 2rem;
-		max-width: $max-width;
-		margin: 5rem auto;
 	}
 }
 
