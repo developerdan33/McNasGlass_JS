@@ -81,6 +81,44 @@ nav
 		transform: translate(15%, 33%) rotate(-45deg);
 	}
 
+	.socials
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+
+		li
+		{
+			float: left;
+			width: 4rem;
+
+			a
+			{
+				color: white;
+				display: block;
+				padding: 0.9rem;
+				text-decoration: none;
+				transition: all .15s ease-in-out;
+
+				i
+				{
+					font-size: 1.5rem;
+				}
+			}
+
+			a:hover
+			{
+				color: darken(white, 20%);
+			}
+
+			.fa-instagram
+			{
+				margin-top: 0.1rem;
+			}
+		}
+	}
+
 	.navbar-nav
 	{
 		.nav-item
@@ -101,55 +139,20 @@ nav
 	}
 }
 
-.socials
-{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-
-	li
-	{
-		float: left;
-		width: 4rem;
-
-		a
-		{
-			color: white;
-			display: block;
-			padding: 0.9rem;
-			text-decoration: none;
-			transition: all .15s ease-in-out;
-
-			i
-			{
-				font-size: 1.5rem;
-			}
-		}
-
-		a:hover
-		{
-			color: darken(white, 20%);
-		}
-
-		.fa-instagram
-		{
-			margin-top: 0.1rem;
-		}
-	}
-}
-
 @media (max-width: 400px)
 {
-	.socials
+	nav
 	{
-		li
+		.socials
 		{
-			width: 3rem;
-
-			a
+			li
 			{
-				padding: 0.5rem;
+				width: 3rem;
+
+				a
+				{
+					padding: 0.5rem;
+				}
 			}
 		}
 	}
@@ -161,7 +164,7 @@ nav
 	{
 		.navbar-brand
 		{
-			padding: 0.1rem 1.5rem 0.3rem;
+			padding: 0.1rem 1.5rem 0.3rem 0;
 
 			img
 			{
@@ -190,40 +193,195 @@ nav
 footer
 {
 	text-align: center;
+	color: white;
 	background-color: $colour-primary;
 	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
 	width: 100%;
 	z-index: 3;
-	font-size: 1.6rem;
+	font-size: 1rem;
 
-	ul
+	> div
 	{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		overflow: hidden;
-		width:150px;
-		margin: 0 auto;
+		max-width: $max-width;
+		margin: auto;
+		padding-top: 3rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 
-		li
+	a
+	{
+		color: white !important;
+	}
+
+	#brand
+	{
+		display: flex;
+
+		img
 		{
+			width: 10rem;
+			height: auto;
 			float: left;
-			width: 50px;
+			margin-right: 2rem;
+		}
 
-			a
+		ul
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+
+			li
 			{
-				color: white;
-				display: block;
-				padding: 15px 13px;
-				text-decoration: none;
-				transition: all .15s ease-in-out;
+				width: 5rem;
+				padding: 0.5rem 0;
+				text-align: left;
+
+				a
+				{
+					color: white;
+					display: block;
+					text-decoration: none;
+					transition: all .15s ease-in-out;
+					padding: 0 !important;
+				}
+
+				a:hover
+				{
+					color: darken(white, 20%) !important;
+				}
+			}
+		}
+	}
+
+	#contact-info
+	{
+		ul
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+
+			li
+			{
+				width: 15rem;
+				padding: 0.5rem 0;
+				text-align: right;
+				display: flex;
+				justify-content: end;
+
+				a
+				{
+					color: white;
+					display: block;
+					text-decoration: none;
+					transition: all .15s ease-in-out;
+					padding: 0 !important;
+				}
+
+				a:hover
+				{
+					color: darken(white, 20%) !important;
+				}
 			}
 
-			a:hover
+			li.social-links
 			{
-				color: $colour-primary;
-				background-color: white;
+				a
+				{
+					margin: 0 1rem;
+				}
 			}
+		}
+	}
+
+	.copyright
+	{
+		font-size: 0.95rem;
+		padding: 1rem 0;
+	}
+}
+
+@media (max-width: 576px)
+{
+	footer
+	{
+		> div
+		{
+			/* display: flex;
+			flex-direction: column; */
+		}
+
+		#brand
+		{
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 2rem;
+
+			img
+			{
+				margin: 0;
+			}
+
+			ul
+			{
+				display: none;
+			}
+		}
+
+		#contact-info
+		{
+			margin-bottom: 1rem;
+
+			h5
+			{
+				display: none;
+			}
+
+			ul
+			{
+				align-items: center;
+
+				li
+				{
+					justify-content: center;
+				}
+
+				li.social-links
+				{
+					margin-top: 1rem;
+
+					a
+					{
+						i
+						{
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+
+		.copyright
+		{
+			font-size: 0.85rem;
+		}
+	}
+}
+
+@media (min-width: 1200px)
+{
+	footer
+	{
+		> div
+		{
+			max-width: $max-width !important;
 		}
 	}
 }
