@@ -36,10 +36,6 @@
 
 	#home-about
 	{
-		padding: 0 2rem;
-		max-width: $max-width;
-		margin: 3rem auto 0;
-
 		h1
 		{
 			margin-bottom: 0;
@@ -68,19 +64,8 @@
 		}
 	}
 
-	#home-services
-	{
-		padding: 0 2rem;
-		max-width: $max-width;
-		margin: 3rem auto 0;
-	}
-
 	#home-reviews
 	{
-		padding: 0 2rem;
-		max-width: $max-width;
-		margin: 3rem auto;
-
 		#reviews-carousel
 		{
 			min-height: 22rem;
@@ -105,6 +90,13 @@
 				font-weight: 600;
 			}
 		}
+	}
+
+	.panel
+	{
+		padding: 0 2rem;
+		max-width: $max-width;
+		margin: 5rem auto;
 	}
 }
 
