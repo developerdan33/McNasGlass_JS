@@ -13,6 +13,7 @@ nav
 		padding: 0.3rem 0.5rem;
 		color: white;
 		transition: all .15s ease-in-out;
+		margin: 0;
 
 		img
 		{
@@ -87,8 +88,8 @@ nav
 			.nav-link
 			{
 				color: white;
-				font-size: 1.3rem;
-				padding: 0.5rem 1.2rem;
+				font-size: 1.1rem;
+				padding: 0.5rem 1rem;
 				transition: all .15s ease-in-out;
 				text-align: center;
 			}
@@ -96,6 +97,55 @@ nav
 				{
 					color: darken(white, 20%);
 				}
+		}
+	}
+}
+
+.socials
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+
+	li
+	{
+		float: left;
+		width: 4rem;
+
+		a
+		{
+			color: white;
+			display: block;
+			padding: 0.9rem;
+			text-decoration: none;
+			transition: all .15s ease-in-out;
+
+			i
+			{
+				font-size: 1.5rem;
+			}
+		}
+
+		a:hover
+		{
+			color: darken(white, 20%);
+		}
+	}
+}
+
+@media (max-width: 400px)
+{
+	.socials
+	{
+		li
+		{
+			width: 3rem;
+
+			a
+			{
+				padding: 0.5rem;
+			}
 		}
 	}
 }
@@ -110,7 +160,7 @@ nav
 
 			img
 			{
-				width: 12.5rem;
+				width: 9rem;
 				height: auto;
 			}
 		}
@@ -122,6 +172,7 @@ nav
 				.nav-link
 				{
 					text-align: left;
+					padding: 0.5rem 1rem 0.1rem;
 				}
 			}
 		}
