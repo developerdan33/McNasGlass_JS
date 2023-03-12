@@ -31,7 +31,29 @@
 			}
 		}
 	}
+}
 
+@media (max-width: 430px)
+{
+	#home-page
+	{
+		p
+		{
+			font-size: 1.2rem;
+		}
+
+		h2
+		{
+			font-size: 1.6rem;
+		}
+	}
+}
+
+/* About */
+/*----------------------------------------------------------------------------------------------------*/
+
+#home-page
+{
 	#home-about
 	{
 		h1
@@ -61,7 +83,32 @@
 			}
 		}
 	}
+}
 
+@media (min-width: 768px)
+{
+	#home-page
+	{
+		#home-about
+		{
+			#cards
+			{
+				flex-direction: row;
+
+				.card
+				{
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* Reviews */
+/*----------------------------------------------------------------------------------------------------*/
+
+#home-page
+{
 	#home-reviews
 	{
 		#reviews-carousel
@@ -91,39 +138,10 @@
 	}
 }
 
-@media (max-width: 430px)
-{
-	#home-page
-	{
-		p
-		{
-			font-size: 1.2rem;
-		}
-
-		h2
-		{
-			font-size: 1.6rem;
-		}
-	}
-}
-
 @media (min-width: 768px)
 {
 	#home-page
 	{
-		#home-about
-		{
-			#cards
-			{
-				flex-direction: row;
-
-				.card
-				{
-					height: 100%;
-				}
-			}
-		}
-
 		#home-reviews
 		{
 			#reviews-carousel
@@ -134,6 +152,40 @@
 			.carousel-inner
 			{
 				padding: 0 10rem;
+			}
+		}
+	}
+}
+
+/* Services */
+/*----------------------------------------------------------------------------------------------------*/
+
+#home-page
+{
+	#home-services
+	{
+		#tiles
+		{
+			.w-100
+			{
+				display:  none;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px)
+{
+	#home-page
+	{
+		#home-services
+		{
+			#tiles
+			{
+				.w-100
+				{
+					display:  block;
+				}
 			}
 		}
 	}

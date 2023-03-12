@@ -1,14 +1,6 @@
 /* Services */
 /*----------------------------------------------------------------------------------------------------*/
 
-#services
-{
-	.w-100
-	{
-		display:  none;
-	}
-}
-
 .service
 {
 	margin-bottom: 1rem;
@@ -26,6 +18,30 @@
 	}
 }
 
+#services
+{
+	> .col
+	{
+		margin-bottom: 2rem;
+
+	}
+	.card
+	{
+		img
+		{
+			width: 100%;
+			height: auto;
+		}
+
+		.card-body
+		{
+			.text
+			{
+			}
+		}
+	}
+}
+
 @media (max-width: 500px)
 {
 	.service
@@ -37,13 +53,13 @@
 	}
 }
 
-@media (min-width: 992px)
+@media (min-width: $sm)
 {
 	#services
 	{
-		.w-100
+		.card
 		{
-			display:  block;
+			height: 100%;
 		}
 	}
 }
